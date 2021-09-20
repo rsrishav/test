@@ -135,6 +135,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "register/static",
     BASE_DIR / "products/static",
     BASE_DIR / "masters/static",
+    BASE_DIR / "ims/staticfiles"
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
