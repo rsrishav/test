@@ -130,13 +130,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "main/static",
-    BASE_DIR / "register/static",
-    BASE_DIR / "products/static",
-    BASE_DIR / "masters/static",
-    BASE_DIR / "ims/staticfiles"
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / "main/static",
+#     BASE_DIR / "register/static",
+#     BASE_DIR / "products/static",
+#     BASE_DIR / "masters/static",
+#     BASE_DIR / "ims/staticfiles"
+# ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -150,4 +150,4 @@ LOGOUT_REDIRECT_URL = "/login"
 
 CONSTANTS = constants
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
