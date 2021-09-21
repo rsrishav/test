@@ -93,8 +93,9 @@ WSGI_APPLICATION = 'ims.wsgi.application'
 
 # we only need the engine name, as heroku takes care of the rest
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ciba',
     }
 }
 
