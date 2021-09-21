@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import dj_database_url
+import django_heroku
 from pathlib import Path
 from main import constants
 import os
@@ -151,3 +152,4 @@ LOGOUT_REDIRECT_URL = "/login"
 CONSTANTS = constants
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+django_heroku.settings(locals())
